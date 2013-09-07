@@ -1,0 +1,250 @@
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{article} % Font size - 10pt, 11pt or 12pt
+
+\usepackage[hmargin=1.25cm, vmargin=1.5cm]{geometry} % Document margins
+
+\usepackage{marvosym} % Required for symbols in the colored box
+\usepackage{ifsym} % Required for symbols in the colored box
+
+\usepackage[usenames,dvipsnames]{xcolor} % Allows the definition of hex colors
+
+% Fonts and tweaks for XeLaTeX
+\usepackage{fontspec,xltxtra,xunicode}
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text]{Hoefler Text} % Main document font
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans} % Font for your name at the top
+%\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+% Colors for links, text and headings
+\usepackage{hyperref}
+\definecolor{linkcolor}{HTML}{506266} % Blue-gray color for links
+\definecolor{shade}{HTML}{E5E4E2} % Platnium color for the contact information box
+\definecolor{text1}{HTML}{2b2b2b} % Main document font color, off-black
+\definecolor{headings}{HTML}{000000} % Dark black color for headings
+% Other color palettes: shade=B9D7D9 and linkcolor=A40000; shade=D4D7FE and linkcolor=FF0080
+
+\hypersetup{colorlinks,breaklinks, urlcolor=linkcolor, linkcolor=linkcolor} % Set up links and colors
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+% Headers and footers can be added with the \lhead{} \rhead{} \lfoot{} \rfoot{} commands
+% Example footer:
+%\rfoot{\color{headings} {\sffamily Last update: \today}. Typeset with Xe\LaTeX}
+
+\renewcommand{\headrulewidth}{0pt} % Get rid of the default rule in the header
+
+\usepackage{titlesec} % Allows creating custom \section's
+
+% Format of the section titles
+\titleformat{\section}{\color{headings}
+\scshape\bf\normalsize\raggedright}{}{0em}{}[\color{black}\titlerule]
+
+\titlespacing{\section}{0pt}{0pt}{5pt} % Spacing around titles
+
+\begin{document}
+
+\color{text1} % Sets the default text color for the whole document to the color defined as 'text1'
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\sffamily\bf\Large Fredrick P. Seitz}\\ % Your name
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} % Start the left-hand side of the page
+\vspace{0pt} % Trick for alignment
+	
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Work Experience} 
+
+%------------------------------------------------
+% WORK EXPERIENCE 1
+%------------------------------------------------
+
+{\raggedleft\textsc{Sept 2007 -- July 2012}\par}
+
+{\raggedright\bf Senior Application Developer/Team Lead\\
+{\it Prime Restaurants of Canada Inc}\\}
+
+\normalsize{Managed and lead the companies application development and database systems. Responsible for the development and implementation of web applications, company portal, and data warehouse. Successfully created a robust infrastructure allowing head office and franchisees to do their business well. Developed and implemented an OLTP system that collected daily updates from restaurants POS systems across Canada. Providing easy access to analyse this data through dashboards, OLAP, and array of web applications. Integrating this with Finance, Marketing, Operations, and Training daily processes creating a customer portal that provided applications that no other restaurant franchising company in Canada has.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 2
+%------------------------------------------------
+
+{\raggedleft\textsc{Dec 2004 -- Aug 2007}\par}
+
+{\raggedright\bf Technology Specialist / Web Application Developer\\
+{\it BMO Financial Group – Information Access and Delivery}\\}
+
+\normalsize{Responsible for the architecture, design, and development of web applications interfacing with corporate data warehouses. Successfully implemented many web applications for contact centres and online banking. Created architecture and design specifications for developers to implement as well as providing liaison with the developers. Created CMMI standardisation documentation for developers. Also, developed integration with enterprise search and metadata analysis applications. Worked with Intranet search team to improve using new search technologies.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 3
+%------------------------------------------------
+
+{\raggedleft\textsc{July 2006 – Sept 2006}\par}
+
+{\raggedright\bf Application Developer \textsc{Contract}\\
+{\it Queens University – Faculty of Health Sciences}\\}
+
+\normalsize{Developed an application called PAM (Program to Assess the Mind) a multilingual application using the "Theory of Mind" concept to assess different mental states. The application has a designer tool for creating studies and a client application to run studies for participants. 
+Application is also being used at University of Toronto.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 4
+%------------------------------------------------
+
+{\raggedleft\textsc{Apr 2001 –- Nov 2004}\par}
+
+{\raggedright\bf Web Application Developer\\
+{\it BMO Financial Group – Innovative/Intranet Solutions}\\}
+
+\normalsize{Web application and database development for online banking head office. Developed many applications to analyse, track, and manage customer and product information coming from BMO online banking.}\\
+
+%------------------------------------------------
+% WORK EXPERIENCE 5
+%------------------------------------------------
+
+{\raggedleft\textsc{Jan 2001 – Mar 2001}\par}
+
+{\raggedright\bf Database and Report Developer \textsc{Contract}\\
+{\it Bank of Montreal – Mbanx/Direct Banking}\\}
+
+\normalsize{Developed a integration system from mainframe to MS SQL databases and Crystal Reports. Developed and maintained department intranet site.}\\
+
+%----------------------------------------------------------------------------------------	
+
+\end{minipage} % End the left-hand side of the page
+\hfill
+\begin{minipage}[t]{0.44\textwidth} % Start the right-hand side of the page
+\vspace{0pt} % Trick for alignment
+
+%----------------------------------------------------------------------------------------
+%	COLORED BOX
+%----------------------------------------------------------------------------------------
+
+\colorbox{shade}{\textcolor{text1}{
+\begin{tabular}{c|p{7cm}}
+\raisebox{-4pt}{\textifsymbol{18}} & 2520 Conning Dr., Kingston, ON, K7L5H6 \\ % Address
+\raisebox{-3pt}{\Mobilefone} & +1 613 5319775 \\ % Phone number
+\raisebox{-1pt}{\Letter} & \href{mailto:fredrick.seitz@gmail.com}{fredrick.seitz@gmail.com} \\ % Email address
+\Keyboard & \href{https://github.com/fritzcoder}{https://github.com/fritzcoder} \\ % Website
+\end{tabular}
+}
+}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	Languages
+%----------------------------------------------------------------------------------------
+
+\section{Languages} 
+
+\begin{tabular}{rl} \itemsep1pt \parskip0pt \parsep0pt
+Programming
+& \textsc{c\#}, \textsc{linq}, \textsc{sql}, \textsc{ruby},\\ 
+& \textsc{javascript}, \textsc{coffeescript} \\
+Markup
+& \textsc{html}, \textsc{css}, \textsc{xml}, \textsc{json}, \textsc{yaml} \\
+\\
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Skills} 
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item \textsc{object oriented design and development}
+\item \textsc{database development (relational and multidimensional)}
+\item \textsc{web development (mvc, forms, scripting)}
+\item \textsc{enterprise architecture (soa, web api, services, security)}
+\item \textsc{desktop application development}
+\item \textsc{systems integration development}
+\end{itemize} 
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	Technologies and Frameworks
+%----------------------------------------------------------------------------------------
+
+\section{Technologies and Frameworks} 
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item \textsc{asp.net, mvc, web services, web api, wcf, sharepoint, ajax, .net \& mono}
+\item \textsc{windows server: iis, ad, adfs (sso), ubuntu server}
+\item \textsc{ms sql server (ssas, ssrs, ssis), mysql, mongodb}
+\item \textsc{desktop application development}
+\item \textsc{git, svn, nunit}
+\item \textsc{nancy, ruby on rails}
+\item \textsc{orm (entity framework, fluent nhibernate, active record)}
+\end{itemize}
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education} 
+
+\begin{tabular}{rl} % Start a table with two columns, one for dates and one for qualifications
+
+%------------------------------------------------
+% EDUCATION 1
+%------------------------------------------------
+2007 & \textbf{Bachelors of Computer Science} \\ 
+& \small 3 years Partial Completion \\
+& \textsc{Computer Science} \\ 
+& \textit{Ryerson University}\\
+%------------------------------------------------
+% EDUCATION 2
+%------------------------------------------------
+2005 & \textbf{Computer Applications Diploma}\\
+& \textsc{Computer Science} \\
+& \textit{Ryerson Universty}\\ 
+%------------------------------------------------
+% EDUCATION 3
+%------------------------------------------------
+2001 & \textbf{Programming Analyst Diploma}\\
+& \small with Honors \\
+& \textit{CDI College of Business and Technology}\\
+%----------------------------------------------------------------------------------------
+
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	AWARDS
+%----------------------------------------------------------------------------------------
+
+\section{Awards} 
+
+\begin{tabular}{rl}
+2006	 & \textbf{Tony Cellini Award of Academic Achievement}\\
+& \textit{Ryerson University}\\
+%------------------------------------------------
+\end{tabular}\\[10pt]
+
+%----------------------------------------------------------------------------------------
+%	Open source projects
+%----------------------------------------------------------------------------------------
+
+\section{Open Source Projects} 
+\begin{tabular}{rl}
+2013 & \textbf{delayed\_job.net}\\ 
+& \href{http://fritzcoder.github.io/delayed_job.net}{http://fritzcoder.github.io/delayed\_job.net} \\ % Website 
+& \textit{Simple light weight asnychronous job runner}\\
+%------------------------------------------------
+\end{tabular}\\[10pt]
+
+
+\end{minipage} % End right-hand side of the page
+
+\end{document}  
